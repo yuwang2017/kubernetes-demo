@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+ <body>
+<h1>Cats World!</h1>
+<h2>
+            <span th:text="'Hello, ' + ${message}"></span>
+</h2>
+<table>
+	<tr th:each="cat: ${cats}">
+    	<td th:text="${{cat.name}}" />
+    	<td th:text="${{cat.weight}}" />
+	</tr>
+</table>
+
+<img src="/images/ragdoll.jpg" width="700" height="400">
+<hr/><p>
+<img src="/images/britishshorthair.jpg"  width="700" height="400">
+</p>
+</body>
+</html>
